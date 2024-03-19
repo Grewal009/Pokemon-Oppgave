@@ -27,13 +27,16 @@ button {
 .buttonContainer {
   width: 200px;
   display: flex;
-  margin-bottom: 22px;
-  margin-left: 50%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 img {
   width: auto;
   height: 250px;
+  padding: 10px;
+  margin-bottom: 30px;
 }
 
 .bottomScreen {
@@ -48,4 +51,25 @@ img {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.pokemonContainer {
+  width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokemonContainer img {
+  width: 100px;
+  height: 100px;
+}
+p {
+  margin-top: -20px;
+  margin-bottom: 0;
+  padding: 5px;
+
+  font-size: 16px;
+  text-align: center;
 }

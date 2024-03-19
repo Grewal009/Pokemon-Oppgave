@@ -74,6 +74,8 @@ function caughtPokemonView() {
   app.innerHTML = /*HTML*/ `
   <div class="caughtContainer">
     <h1>Du fanget ${player.pokemon[player.pokemon.length - 1].name}</h1>
+    <img src="${player.pokemon[player.pokemon.length - 1].image}">
+
     <div class="buttonContainer">
               <button onclick="updateView()">Finn en annen</button>
               <button onclick="showPokemon()">Vis dine pokemon</button>       
@@ -88,7 +90,28 @@ function catchPokemon() {
 }
 
 function showPokemon() {
-  //console.log(playerPokemon);
+  console.log(player.pokemon);
+
+  app.innerHTML = /*HTML*/ `
+  <div class="caughtContainer">
+  <h1>Du fanget : </h1>
+  <div class="pokemonContainer">${getCatchedPokemon()}</div>
+
+    <div class="buttonContainer">
+              <button onclick="updateView()">Finn en annen</button>
+              <button onclick="showPokemon()">Vis dine pokemon</button>       
+          </div>
+  </div>
+  `;
+}
+
+function getCatchedPokemon() {
+  let playerPokemon = "";
+  console.log(player.pokemon);
+  for (let pPokemon of player.pokemon) {
+    playerPokemon += `<div><p>${pPokemon.name}</p><img src="${pPokemon.image}"></div>`;
+  }
+  return playerPokemon;
 }
 
 function getRandomPokemon() {
