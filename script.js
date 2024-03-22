@@ -1,28 +1,28 @@
 let pikachu = {
   name: "Pikachu",
   health: 45,
-  image: "/Images/pikachu.png",
+  image: "./Images/pikachu.png",
   level: 8,
 };
 
 let bulbasaur = {
   name: "Bulbasaur",
   health: 70,
-  image: "/Images/bulbasaur.png",
+  image: "./Images/bulbasaur.png",
   level: 12,
 };
 
 let oranguru = {
   name: "Oranguru",
   health: 170,
-  image: "/Images/oranguru.png",
+  image: "./Images/oranguru.png",
   level: 45,
 };
 
 let drowzee = {
   name: "Drowzee",
   health: 90,
-  image: "/Images/drowzee.png",
+  image: "./Images/drowzee.png",
   level: 33,
 };
 
@@ -31,7 +31,7 @@ let randomPokemon;
 
 let player = {
   name: "Bjarne",
-  image: "/Images/pokemonTrainerIdle.png",
+  image: "./Images/pokemonTrainerIdle.png",
   pokemon: [],
 };
 
